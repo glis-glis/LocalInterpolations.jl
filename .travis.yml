@@ -1,0 +1,15 @@
+language: julia
+sudo: false
+julia:
+    - 0.6
+    - nightly
+matrix:
+    allow_failures:
+        - julia: nightly
+before_script:
+    - julia -e 'Pkg.clone(pwd())'
+    - julia -E 'using LocalInterpolations'
+script:
+    julia test/runtests.jl -v
+notifications:
+    email: false
