@@ -10,8 +10,8 @@ local values are used: The data itself and its first-order derivatives. This is
 in contrast to splines, where the coefficients are not calculated using
 derivatives, but non-local data, which can leed to over-smoothing the result.
 
-.. |travis-ci| image:: https://api.travis-ci.org/AFueglistaler/LocalInterpolations.jl.svg?branch=master
-    :target: https://travis-ci.org/AFueglistaler/LocalInterpolations.jl
+.. |travis-ci| image:: https://api.travis-ci.com/glis-glis/LocalInterpolations.jl.svg?branch=master
+    :target: https://travis-ci.com/github/glis-glis/LocalInterpolations.jl
 
 Installation
 ============
@@ -73,7 +73,7 @@ Higher dimensions
 -----------------
 Using LocalInterpolations with higher dimensions is the same as for 1D, but you
 need many more derivatives. For example, in 3 dimensions, you will need
-:math:`f, f_x =  df/dx, f_y, f_z, f_xy = d²f/dx/dy, f_xz, f_yz` and
+:math:`f, f_x =  df/dx, f_y, f_z, f_xy = dÂ²f/dx/dy, f_xz, f_yz` and
 :math:`f_xyz`. 
 
 .. code:: julia
